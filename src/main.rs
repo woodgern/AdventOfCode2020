@@ -1,4 +1,5 @@
 mod day_one;
+mod day_two;
 
 use std::env;
 use std::fs;
@@ -6,6 +7,9 @@ use std::time::SystemTime;
 
 use day_one::day_one_problem_one;
 use day_one::day_one_problem_two;
+
+use day_two::day_two_problem_one;
+use day_two::day_two_problem_two;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -18,6 +22,8 @@ fn main() {
     match args[1].as_str() {
         "1-1" => day_one_problem_one(problem_input),
         "1-2" => day_one_problem_two(problem_input),
+        "2-1" => day_two_problem_one(problem_input),
+        "2-2" => day_two_problem_two(problem_input),
         _ => println!("Solution not found"),
     }
 
