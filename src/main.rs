@@ -10,6 +10,7 @@ mod day_nine;
 mod day_ten;
 mod day_eleven;
 mod day_twelve;
+mod day_thirteen;
 
 use std::env;
 use std::fs;
@@ -51,6 +52,9 @@ use day_eleven::day_eleven_problem_two;
 use day_twelve::day_twelve_problem_one;
 use day_twelve::day_twelve_problem_two;
 
+use day_thirteen::day_thirteen_problem_one;
+use day_thirteen::day_thirteen_problem_two;
+
 fn main() {
     let args: Vec<String> = env::args().collect();
     let problem = args[1].as_str();
@@ -84,6 +88,8 @@ fn main() {
         "11-2" => day_eleven_problem_two(problem_input),
         "12-1" => day_twelve_problem_one(problem_input),
         "12-2" => day_twelve_problem_two(problem_input),
+        "13-1" => day_thirteen_problem_one(problem_input),
+        "13-2" => day_thirteen_problem_two(problem_input),
         _ => println!("Solution not found"),
     }
 
