@@ -20,9 +20,9 @@ pub fn day_thirteen_problem_one(input: String) {
     }
 }
 
-fn check_candidate(candidate: i128, bus_ids: Vec<(usize, i32)>) -> bool {
+fn check_candidate(candidate: i128, bus_ids: &Vec<(usize, i32)>) -> bool {
     for (offset, bus_id) in bus_ids {
-        if (candidate + (offset as i128)) % bus_id as i128 != 0 {
+        if (candidate + (*offset as i128)) % *bus_id as i128 != 0 {
             return false
         }
     }
