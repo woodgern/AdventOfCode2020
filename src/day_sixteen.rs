@@ -166,35 +166,6 @@ pub fn day_sixteen_problem_two(input: String) {
         }
     }
 
-    // field_map = reduce_field_options(field_map.clone());
-    // for x in field_map.clone().values() {
-    //     print!("{},", x.len());
-    // }
-    // println!("");
-    // println!("");
-    // field_map = reduce_field_options(field_map.clone());
-    // for x in field_map.clone().values() {
-    //     print!("{},", x.len());
-    // }
-    // println!("");
-    // println!("");
-    // field_map = reduce_field_options(field_map.clone());
-    // for x in field_map.clone().values() {
-    //     print!("{},", x.len());
-    // }
-    // println!("");
-    // println!("");
-    // field_map = reduce_field_options(field_map.clone());
-    // for x in field_map.clone().values() {
-    //     print!("{},", x.len());
-    // }
-    // println!("");
-    // println!("");
-    // field_map = reduce_field_options(field_map.clone());
-    // for x in field_map.clone().values() {
-    //     print!("{},", x.len());
-    // }
-
     while !is_fields_solved(&field_map) {
         field_map = reduce_field_options(field_map.clone());
     }
